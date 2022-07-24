@@ -1,4 +1,4 @@
-package leetcode
+package string
 
 /*
 个人思路：栈，这题没啥意思，leetcode记录上我还做过。不过go的容器不完善，不导包没有队列。我临时没有想到好的替代栈的方案。

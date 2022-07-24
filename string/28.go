@@ -1,4 +1,4 @@
-package leetcode
+package string
 
 /*
 个人思路：遍历，一个个比较，注意下corner case即可

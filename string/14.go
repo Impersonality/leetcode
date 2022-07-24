@@ -1,4 +1,4 @@
-package leetcode
+package string
 
 /*
 个人思路：遍历数组，先算出前面两个字符串的prefix，然后用prefix与数组中剩下的元素一个个计算prefix
