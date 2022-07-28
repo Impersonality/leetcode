@@ -2,7 +2,7 @@ package string
 
 /*
 个人思路：构建map对char一个个映射。对同构理解有偏差，第一次提交只从s映射了t，实际应该两侧都映射
-答案：
+答案：同上
 */
 
 func f(s string, t string) bool {
