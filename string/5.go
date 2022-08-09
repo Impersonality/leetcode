@@ -8,18 +8,18 @@ package string
 
 //////////////////////////中心扩散//////////////////////////
 
-var max = ""
+var maxResult = ""
 
 func longestPalindrome(s string) string {
 	if len(s) <= 1 {
 		return s
 	}
-	max = s[:1]
+	maxResult = s[:1]
 	for i := 0; i < len(s); i++ {
 		middleSpread(s, i, i)
 		middleSpread(s, i, i+1)
 	}
-	return max
+	return maxResult
 }
 
 func middleSpread(s string, left, right int) {
@@ -27,8 +27,8 @@ func middleSpread(s string, left, right int) {
 		left--
 		right++
 	}
-	if right-left-1 > len(max) {
-		max = s[left+1 : right]
+	if right-left-1 > len(maxResult) {
+		maxResult = s[left+1 : right]
 	}
 }
 
