@@ -16,7 +16,7 @@ func recoverTree(root *TreeNode) {
 
 func inOrderTraverse(t1, t2, node, prev *TreeNode) (*TreeNode, *TreeNode, *TreeNode) {
 	if node == nil {
-		return nil, t1, t2
+		return prev, t1, t2
 	}
 	prev, t1, t2 = inOrderTraverse(t1, t2, node.Left, prev)
 	if prev != nil && prev.Val > node.Val {
