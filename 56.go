@@ -30,13 +30,6 @@ func QuickSort(arr [][]int) {
 	QuickSort(arr[pivot+1:])
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 func merge(arr [][]int) [][]int {
 	if len(arr) < 2 {
 		return arr
@@ -50,7 +43,7 @@ func merge(arr [][]int) [][]int {
 			res = append(res, arr[i])
 			cur++
 		} else {
-			res[cur][1] = max(res[cur][1], arr[i][1])
+			res[cur][1] = Max(res[cur][1], arr[i][1])
 		}
 	}
 	return res

@@ -20,7 +20,7 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 	}
 
 	for cur < len(intervals) && newInterval[1] >= intervals[cur][0] {
-		newInterval = []int{min(intervals[cur][0], newInterval[0]), max(intervals[cur][1], newInterval[1])}
+		newInterval = []int{Min(intervals[cur][0], newInterval[0]), Max(intervals[cur][1], newInterval[1])}
 		cur++
 	}
 	res = append(res, newInterval)
@@ -30,11 +30,4 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 		cur++
 	}
 	return res
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
