@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：简单的解法还是很容易想到，构建map存储一个list的全部节点，list b中若有相同，则为交点

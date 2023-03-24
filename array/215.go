@@ -1,4 +1,4 @@
-package leetcode
+package array
 
 /*
 思路：无，没思路

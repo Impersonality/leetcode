@@ -1,4 +1,4 @@
-package leetcode
+package array
 
 /*
 思路：双指针的思想容易想到，但是如果从头合并到nums1中，需要大量移动数组，没想出来方法。

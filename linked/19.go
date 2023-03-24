@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：先算出链表总长度，即可得出待删除节点的顺序，需处理头节点corner case
@@ -28,7 +28,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return head
 }
 
-//////////////////////TwoPoints//////////////////////
+// ////////////////////TwoPoints//////////////////////
 func removeNthFromEndTwoPoints(head *ListNode, n int) *ListNode {
 	newHead := &ListNode{Next: head}
 	preSlow, slow, fast := newHead, head, head

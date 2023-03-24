@@ -1,11 +1,11 @@
-package leetcode
+package array
 
 /*
 思路：有想到第二种方法，双指针一个个查找，直到中位数，不过复杂度O(m+n).不过没写出来，这题corner case很复杂。
 答案：答案的两种O(log(m+n))的算法理解不难，但实现起来也是非常复杂，这题算是先抄过一遍，之后再来吧
 */
 
-//////////////////////遍历查找 O(m+n)//////////////////////
+// ////////////////////遍历查找 O(m+n)//////////////////////
 func findMedianSortedArrays1(nums1 []int, nums2 []int) float64 {
 	m, n := len(nums1), len(nums2)
 	length := m + n
@@ -28,7 +28,7 @@ func findMedianSortedArrays1(nums1 []int, nums2 []int) float64 {
 	}
 }
 
-//////////////////////getKth O(long(m+n))//////////////////////
+// ////////////////////getKth O(long(m+n))//////////////////////
 func findMedianSortedArrays2(nums1 []int, nums2 []int) float64 {
 	m, n := len(nums1), len(nums2)
 	left := (m + n + 1) / 2
@@ -58,7 +58,7 @@ func getKth(nums1 []int, start1, end1 int, nums2 []int, start2, end2 int, k int)
 	}
 }
 
-//////////////////////Binary Search O(long(m+n))//////////////////////
+// ////////////////////Binary Search O(long(m+n))//////////////////////
 func findMedianSortedArrays3(nums1 []int, nums2 []int) float64 {
 	m, n := len(nums1), len(nums2)
 	if m > n {

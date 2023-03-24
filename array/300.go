@@ -1,4 +1,4 @@
-package leetcode
+package array
 
 /*
 思路：没接出来，看到dp想了想，dp[i]是以i结尾数组的结果集，但没找到dp[i]的推导式。

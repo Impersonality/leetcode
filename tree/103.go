@@ -1,4 +1,4 @@
-package leetcode
+package tree
 
 /*
 思路：102的进阶，层序遍历，reverse间隔层的list。时间30%，空间还可以

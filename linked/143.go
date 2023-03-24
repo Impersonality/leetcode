@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：没有思路
@@ -6,7 +6,7 @@ package leetcode
 翻转链表的思路是：双指针找到链表中点，从中点开始翻转后半，然后再连接链表的两部分。实现起来细节很多，还是挺难的
 */
 
-//////////////////////Recursive//////////////////////
+// ////////////////////Recursive//////////////////////
 func reorderListRecursive(head *ListNode) {
 	length := 0
 	cur := head
@@ -37,7 +37,7 @@ func reorderListHelper(head *ListNode, length int) *ListNode {
 	return outTail
 }
 
-//////////////////////Reverse//////////////////////
+// ////////////////////Reverse//////////////////////
 func reorderList(head *ListNode) {
 	if head == nil || head.Next == nil {
 		return

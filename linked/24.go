@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：25没写出来，来写24，看着像纯coding能力题，写的毫无优雅，竟然100%速度ac

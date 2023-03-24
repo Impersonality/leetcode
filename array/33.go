@@ -1,4 +1,4 @@
-package leetcode
+package array
 
 /*
 思路：数组分为两部分：大数组和小数组，若target>num[0]，从大数组中遍历；target<num[len]，从小数组中遍历。复杂度应该是O(n)，leetcode给的时间和空间复杂度都比较不错

@@ -1,4 +1,4 @@
-package leetcode
+package tree
 
 /*
 思路：层序遍历思想是用将节点顺序入队列，然后先进先出，将节点的左右子节点入队。我用了go的list，效率很低

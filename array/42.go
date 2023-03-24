@@ -1,11 +1,11 @@
-package leetcode
+package array
 
 /*
 思路：只想到蛮力破解，没想到答案也是，这是道coding题
 答案：
 */
 
-///////////////////////Row///////////////////////
+// /////////////////////Row///////////////////////
 func trapRow(height []int) int {
 	sum := 0
 	max := getMax(height)
@@ -36,7 +36,7 @@ func getMax(height []int) int {
 	return max
 }
 
-///////////////////////Column///////////////////////
+// /////////////////////Column///////////////////////
 func trapColumn(height []int) int {
 	sum := 0
 	for i := 0; i < len(height); i++ {
@@ -66,7 +66,7 @@ func min(a, b int) int {
 	return b
 }
 
-///////////////////////DP///////////////////////
+// /////////////////////DP///////////////////////
 func trapDP(height []int) int {
 	sum := 0
 	leftBox, rightBox := make([]int, len(height)), make([]int, len(height))
@@ -93,7 +93,7 @@ func trapDP(height []int) int {
 	return sum
 }
 
-///////////////////////TWO POINTS///////////////////////
+// /////////////////////TWO POINTS///////////////////////
 func trapTwoPoints(height []int) int {
 	sum := 0
 	left, right := 0, len(height)-1

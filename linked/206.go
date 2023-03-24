@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：简单题没写出来，递归和迭代都没写出来。

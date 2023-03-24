@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：没解出来，只记住了reverseList使用了指针翻转。这题霜神思路是头插法，找到prev和cur，然后将cur后面的节点一个个插入到prev后面

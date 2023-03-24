@@ -1,4 +1,4 @@
-package leetcode
+package array
 
 /*
 思路：只想到蛮力破解，没想到答案也是，这是道coding题

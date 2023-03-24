@@ -1,4 +1,4 @@
-package leetcode
+package sort
 
 /*
 秒看答案233
@@ -7,6 +7,11 @@ ListNode排序，147是指定用insertion，链表更适合mergeSort
 递归会增加栈空间，空间复杂度log(n)，官答介绍了自底向上的mergeSor，就是遍历，从1开始两两Node merge
 看了下实现，理解很困难，先暂时放弃
 */
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
 func mergeList(left, right *ListNode) *ListNode {
 	if left == nil {

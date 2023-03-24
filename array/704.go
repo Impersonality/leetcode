@@ -1,8 +1,8 @@
-package leetcode
+package array
 
 // 思路：经典二分查找
 
-func search(nums []int, target int) int {
+func search704(nums []int, target int) int {
 	l, r := 0, len(nums)-1
 	for l <= r {
 		mid := (l + r) / 2

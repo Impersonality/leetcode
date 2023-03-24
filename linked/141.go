@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：没写出来，没读懂题意。map存储思路比较容易想到

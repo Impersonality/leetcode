@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：想到了优先列队的思想，但是go的集合很少，需自己实现。

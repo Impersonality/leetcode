@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：141的进阶，这题如果不限制空间复杂度非常简单，限制O(1)空间想不出来

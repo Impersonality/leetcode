@@ -1,4 +1,4 @@
-package leetcode
+package tree
 
 /*
 思路：递归思路很简单，但是更优的解法没想到

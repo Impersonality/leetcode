@@ -1,4 +1,4 @@
-package leetcode
+package linked
 
 /*
 思路：花了很长时间，并且debug修改了几次才通过。这题思路和24不像，和206 reverseList很像。
