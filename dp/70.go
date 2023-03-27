@@ -4,7 +4,22 @@ package dp
 思路：只想到了递归，递归来解斐波那契效率太低了。
 答案：有时简单题最是难搞。一种解法是动态规划来模拟斐波那契，另一种是矩阵乘法
 */
-//////////////////////dp//////////////////////
+
+func Max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func Min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+// ////////////////////dp//////////////////////
 func climbStairs(n int) int {
 	i, j, k := 0, 1, 1
 	for a := 0; a < n; a++ {
@@ -15,7 +30,7 @@ func climbStairs(n int) int {
 	return k
 }
 
-//////////////////////matrix//////////////////////
+// ////////////////////matrix//////////////////////
 type matrix [2][2]int
 
 func mul(a, b matrix) matrix {
